@@ -1,0 +1,11 @@
+<ul class="posts">
+    {% for post in site.posts %}
+    <li class="post">
+        <span class="date">{{ post.date | date_to_string }}</span>
+        <p class="title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></p>
+        {% if post.tagline %}
+        <p class="tagline">{{ post.tagline }}</p>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>

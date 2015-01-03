@@ -1,0 +1,28 @@
+[role="search"] {
+  display: none;
+}
+
+.nav {
+  &.navbar-nav {
+    float: right;
+    li {
+    }
+  }
+}
+
+a.navbar-brand {
+  margin-top:7px;
+  padding: 0 0 0 0;
+  border: 0 none;
+  img {
+    height:36px;
+    width:auto;
+  }
+}
+
+#footer {
+  .container {
+    text-align:right;
+    opacity:0.38;
+  }
+}

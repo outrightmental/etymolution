@@ -1,0 +1,63 @@
+// Colors
+$background-color: #fdfdfd;
+$brand-color: #2a7ae2;
+$footer_bg_color: darken($background-color,5%);
+
+// Colors: Gray
+$grey-color: #828282;
+$grey-color-dark: darken($grey-color, 25%);
+$grey-color-light: lighten($grey-color, 40%);
+
+// Colors: Code
+$code-border-color: $grey-color-light;
+$code-bg-color: #eef;
+
+// Colors: Text
+$heading_color: #222;
+$text-color: #111;
+$link-color: $text-color;
+$link-underline-color: lighten($link-color,25%);
+$link-visited-color: lighten($text-color,25%);
+$link-hover-color: darken($text-color, 25%);
+$collate-section-underline-color: lighten($link-underline-color,25%);
+
+// Colors: Tags
+$tag_box_active_bg_color: #57A957;
+$tag_box_active_border_color: #4c964d;
+$tag_box_bg_color: #eee;
+$tag_box_border_color: #cccccc;
+$tag_box_hover_bg_color: #e5e5e5;
+$tag_box_text_color: #555;
+
+// Typography
+$base-font-family: serif;
+$date-font-family: monospace;
+$tag-font-family: monospace;
+$signature-font-family: monospace;
+$blockquote-text-color: #000;
+$blockquote-font-family: serif;
+$base-font-size: 16px;
+$base-line-height: 1.5;
+$small-font-size: $base-font-size * 0.875;
+$spacing-unit: 30px;
+
+// Geometry
+$margin-one: 20px;
+
+// Width of the content area
+$content-width: 800px;
+$on-laptop: 800px;
+$on-palm: 600px;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}

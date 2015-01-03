@@ -1,0 +1,32 @@
+---
+layout: page
+title: Elements
+header: Definitions by Element
+group: navigation
+permalink: /elements/
+---
+{% include JB/setup %}
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        {% for tag in site.tags %}
+        <h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
+        <ul>
+            {% assign pages_list = tag[1] %}
+            {% include list_pages.html %}
+        </ul>
+        {% endfor %}
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-8">
+        <ul class="tag_box inline">
+            {% assign tags_list = site.tags %}
+            {% include list_tags.html %}
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+---
+layout: default
+---
+{% include JB/setup %}
+
+<div class="page-header">
+    <div class="row post-full">
+        <div class="col-sm-12 col-md-8">
+            <h1>{{ page.title }}</h1>
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+
+            <ul class="pagination">
+                {% if page.previous %}
+                <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo;
+                    Previous</a></li>
+                {% else %}
+                <li class="prev disabled"><a>&larr; Previous</a></li>
+                {% endif %}
+                <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+                {% if page.next %}
+                <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &raquo;</a>
+                </li>
+                {% else %}
+                <li class="next disabled"><a>Next &rarr;</a>
+                    {% endif %}
+            </ul>
+
+            {% unless page.categories == empty %}
+            <ul class="tag_box inline">
+                <li><i class="glyphicon glyphicon-book"></i> category</li>
+                {% assign categories_list = page.categories %}
+                {% include list_categories.html %}
+            </ul>
+            {% endunless %}
+
+            {% unless page.tags == empty %}
+            <ul class="tag_box inline">
+                <li><i class="glyphicon glyphicon-tags"></i> elements</li>
+                {% assign tags_list = page.tags %}
+                {% include list_tags.html %}
+            </ul>
+            {% endunless %}
+
+            {% include JB/comments %}
+        </div>
+    </div>
+</div>
+
+<div class="row post-full">
+    <div class="col-sm-12 col-md-8">
+        <div class="signature">
+            <a href="/info/">{{ site.author.name }}</a>, {{ page.date | date_to_long_string }}
+        </div>
+    </div>
+</div>

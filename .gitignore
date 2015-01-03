@@ -1,0 +1,20 @@
+# Environment variables
+.env
+
+# Jekyll
+_site/
+.sass-cache/
+
+# Mac OS X
+Thumbs.db
+.DS_Store
+
+# Ruby
+.rbenv-version
+.rvmrc
+
+# IDE
+.idea/
+
+# Keepers
+!.gitkeep

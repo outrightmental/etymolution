@@ -1,0 +1,21 @@
+@import "variables";
+
+// Page Header
+.page-header {
+  small {
+    display: block;
+    width: 100%;
+    margin-top: 0.38em;
+  }
+}
+
+// Box with Tags
+.tag_box {
+  margin-bottom: $margin-one;
+  li {
+    &:first-child {
+      display: block;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@import 'variables';
+
+/* Custom container */
+
+/* Replaced with normal container and standard footer */
+/*.container-narrow {
+  margin: 0 auto;
+  max-width: 700px; }
+
+.container-narrow > hr {
+  margin: 30px 0; }
+*/
+
+/* Replaced with standard BS3 Navbar */
+/*.navbar .nav {
+  float: right; }*/
+
+/* Jekyll Bootstrap Colors */
+h1, h2, h3, h4 {
+  color: $heading_color;
+}
+
+#footer {
+  background-color: $footer_bg_color;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* posts index */
+.post > h3.title {
+  position: relative;
+  padding-top: 10px;
+}
+
+.post > h3.title span.date {
+  position: absolute;
+  right: 0;
+  font-size: 0.9em;
+}
+
+.post > .more {
+  margin: 10px 0;
+  text-align: left;
+}
+
+/* post-full*/
+.post-full .date {
+  margin-bottom: $margin-one;
+  font-weight: bold;
+}
+
+/* tag_box */
+.tag_box {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  font-family: $tag-font-family;
+}
+
+.tag_box li {
+  line-height: 28px;
+}
+
+.tag_box li i {
+  opacity: 0.9;
+}
+
+.tag_box.inline li {
+  float: left;
+}
+
+.tag_box a {
+  padding: 3px 6px;
+  margin: 2px;
+  background: $tag_box_bg_color;
+  color: $tag_box_text_color;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px dashed $tag_box_border_color;
+}
+
+.tag_box a span {
+  vertical-align: super;
+  font-size: 0.8em;
+}
+
+.tag_box a:hover {
+  background-color: $tag_box_hover_bg_color;
+}
+
+.tag_box a.active {
+  background: $tag_box_active_bg_color;
+  border: 1px solid $tag_box_active_border_color;
+  color: #FFF;
+}

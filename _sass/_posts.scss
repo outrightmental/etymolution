@@ -1,0 +1,69 @@
+@import "variables";
+
+// List of Posts
+ul.posts {
+  margin-top: $margin-one;
+  margin-left: 0;
+  li.post {
+    list-style-type: none;
+    margin-bottom: $margin-one * 1.38;
+    .date {
+      font-family: $date-font-family;
+      font-size: 0.62em;
+      display: block;
+      width: 100%;
+    }
+    .title {
+      font-size: 1.38em;
+      display: block;
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .tagline {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+h2, h3 {
+  &.collate {
+    opacity: 0.38;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid $collate-section-underline-color;
+  }
+}
+
+.post-full {
+  p {
+    margin-top: $margin-one * 1.62;
+    font-size:1.618em;
+    line-height:1.618em;
+  }
+  .signature {
+    text-align:right;
+    display: block;
+    width: 100%;
+    font-family: $signature-font-family;
+    font-size: 0.62em;
+    margin-bottom: $margin-one;
+  }
+  blockquote {
+    color:$blockquote-text-color;
+    font-family: $blockquote-font-family;
+    letter-spacing:0.00em;
+    padding-right:$margin-one * 2;
+  }
+  iframe {
+    width:100%;
+    height:450px;
+  }
+  .pagination {
+    margin-top: 0;
+  }
+  .content {
+    margin-bottom: $margin-one * 2.5;
+  }
+}
+
