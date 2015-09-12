@@ -13,6 +13,6 @@ We, the authors and editors of Etymolution, swear to remain faithful to the Roma
 
 <p>Principal authors are Hope Kaye and <a href="http://www.nickkaye.com/" target="_blank">Nick Kaye</a>.</p>
 
-<p>An <a href="http://www.outrightmental.com/" target="_blank">Outright Mental Inc.</a> production.
+<p>An <a href="http://w.outright.io/" target="_blank">Outright Mental Inc.</a> production.
 
-<p>Say <a href="mailto:hello@etymolution.com">hello@etymolution.com</a>.</p>
+<p>Say <a href="mailto:hiya@outright.io">hiya@outright.io</a>.</p>
