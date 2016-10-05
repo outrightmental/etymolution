@@ -8,6 +8,6 @@ tags: [ magic, accident ]
 
 ***verb.*** To mystify, confound or amaze.
 
-> Sometimes I hide surprises and totally Blaine future me!
+> I swore that I had lifted every object on the desk three time, looking for my wallet! And suddenly, there it was right in front of me. Like I completely Blained myself.
 
   [David Blaine]: http://www.davidblaine.com/
