@@ -2,7 +2,7 @@
 layout: post
 category: newed
 title: "Blaine"
-description: "verb. To mystify, confound or amaze, even by accident, e.g. &quot;I hide surprises in places I know I&#039;ll forget, to Blaine myself in the future.&quot; (cont&#039;d)"
+description: "verb. To mystify, confound or amaze, e.g. &quot;I swore that I had lifted every object on the desk three times looking for my wallet, but suddenly it was right in front of me.  I had completely Blained myself.&quot; (cont'd)"
 tags: [ magic, accident ]
 ---
 
