@@ -12,7 +12,7 @@ Can refer to reverse sentences:
 
 > Sentences reverse to refer can.
 
-Or reversed words in a [forword](/forword/) sentence:
+Or reversed words in a [forword](/forword) sentence:
 
 > Desrever sdrow ni a drowrof ecnetnes.
 

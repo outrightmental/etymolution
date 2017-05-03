@@ -6,7 +6,7 @@ description: "n. Putting highly effective twerking abilities into practice, as 
 tags: [ effective, work ]
 ---
 
-***n.*** Putting highly effective [twerking](/twerk/) abilities into practice, as in an industry mixer or an online social netwerk, yielding excellent results.
+***n.*** Putting highly effective [twerking](/twerk) abilities into practice, as in an industry mixer or an online social netwerk, yielding excellent results.
 
 also ***n.,* Netwerk.** The fruit of netwerking.
 
