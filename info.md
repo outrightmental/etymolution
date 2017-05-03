@@ -11,7 +11,7 @@ A single word can be an anthem for a powerful set of ideas or a moment in our hu
 
 We, the authors and editors of Etymolution, swear to remain faithful to the Romantic & Germanic roots of the English language.
 
-<p>Principal authors are Hope Kaye and <a href="http://www.nickkaye.com/" target="_blank">Nick Kaye</a>.</p>
+<p>Principal authors are Hope Charney Kaye and <a href="https://w.charney.io/" target="_blank">Nick Charney Kaye</a>.</p>
 
 <p>An <a href="https://w.outright.io/" target="_blank">Outright Mental<sup>&reg;</sup></a> production.
 
