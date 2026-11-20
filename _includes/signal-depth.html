@@ -1,0 +1,11 @@
+{% comment %}
+  Signal's depth ladder (outrightmental/signal, sdk/web/ladder.mjs; sdk/web/hugo/signal-depth.html is
+  the same as a Hugo partial). One 1x1 image every 200 px down the page: the first loads with the page
+  and is the view, the rest are lazy, so the browser asks for each as the reader nears it, and one more
+  sits at the foot. Signal's server counts them with no script, no cookie and no id.
+
+  It is the first thing inside <body>, and body is `position: relative` (bs-sticky-footer.css), so
+  the ladder spans the page's height and a rung past the end of a short page is never asked for.
+  Production builds only (GitHub Pages builds with JEKYLL_ENV=production; `jekyll serve` does not),
+  so a local server never counts into the stream.
+{% endcomment %}{% if jekyll.environment == "production" and site.signal.key %}{% assign signal_ingest = site.signal.ingest | default: "https://in.signal.outright.io" %}{% assign signal_path = page.url | default: "/" | downcase | split: "?" | first | split: "#" | first | replace: "/index.html", "/" | replace: "/index.htm", "/" %}{% assign signal_last = signal_path | slice: -1, 1 %}{% if signal_path.size > 1 and signal_last == "/" %}{% assign signal_cut = signal_path.size | minus: 1 %}{% assign signal_path = signal_path | slice: 0, signal_cut %}{% endif %}{% capture signal_base %}{{ signal_ingest }}/v1/d?k={{ site.signal.key | url_encode }}&amp;p={{ signal_path | url_encode }}{% endcapture %}<div data-signal-depth aria-hidden="true" style="position:absolute;top:0;bottom:0;left:0;width:1px;overflow:hidden;pointer-events:none;opacity:0">{% for signal_at in (0..47) %}<img src="{{ signal_base }}&amp;b={{ signal_at }}-{{ signal_at }}" alt="" width="1" height="1"{% if signal_at > 0 %} loading="lazy"{% endif %} decoding="async" referrerpolicy="no-referrer" style="position:absolute;left:0;top:{{ signal_at | times: 200 }}px">{% endfor %}<img src="{{ signal_base }}&amp;e=1" alt="" width="1" height="1" loading="lazy" decoding="async" referrerpolicy="no-referrer" style="position:absolute;left:0;bottom:0"></div>{% endif %}

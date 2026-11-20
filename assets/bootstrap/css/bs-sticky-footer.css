@@ -1,15 +1,21 @@
 /* Sticky footer styles
 -------------------------------------------------- */
 
-html,
-body {
+html {
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
 }
 
+/* body is as tall as the page, and positioned: Signal's depth ladder (_includes/signal-depth.html)
+   is its first child and spans its height. The viewport-high #wrap keeps the footer at the foot. */
+body {
+  position: relative;
+  min-height: 100%;
+}
+
 /* Wrapper for page content to push down footer */
 #wrap {
-  min-height: 100%;
+  min-height: 100vh;
   height: auto;
   /* Negative indent footer by its height */
   margin: 0 auto -30px;
@@ -17,9 +23,9 @@ body {
   padding: 0 0 30px;
 }
 
-/* Set the fixed height of the footer here */
+/* The footer is at least 30px high, and grows if its line wraps on a narrow screen */
 #footer {
-  height: 30px;
+  min-height: 30px;
   background-color: #f5f5f5;
 }
 
