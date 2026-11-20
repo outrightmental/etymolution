@@ -1,5 +1,7 @@
 <div id="footer">
     <div class="container">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.copyright }}</p>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.copyright }}
+            &middot; <a href="{{ site.signal.privacy | default: 'https://outrightmental.com/privacy/' }}">Privacy</a>{% if jekyll.environment == "production" and site.signal.key %}
+            &middot; <a href="#privacy-choices" onclick="if (window.Signal) { window.Signal.choices(); } return false;">Privacy choices</a>{% endif %}</p>
     </div>
 </div>

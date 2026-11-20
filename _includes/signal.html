@@ -1,0 +1,13 @@
+{% comment %}
+  Signal's web client (outrightmental/signal, sdk/web/signal.js, served from signal.outright.io): the
+  enrichment on top of the ladder (signal-depth.html). It shows its own small banner, and only after a
+  yes keeps a random visitor id in this browser's storage to follow a journey across the studio's
+  sites. Global Privacy Control is a no. It sends no depth of its own on a page with a ladder.
+  "Privacy choices" in the footer shows the banner again. Production builds only, as the ladder.
+{% endcomment %}{% if jekyll.environment == "production" and site.signal.key %}
+<script defer src="https://signal.outright.io/w/signal.js"
+        data-key="{{ site.signal.key }}"
+        data-ingest="{{ site.signal.ingest | default: 'https://in.signal.outright.io' }}"
+        data-studio="{{ site.signal.studio | join: ' ' }}"
+        data-privacy="{{ site.signal.privacy }}"></script>
+{% endif %}

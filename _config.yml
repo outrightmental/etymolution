@@ -25,6 +25,34 @@ author :
 #
 production_url : http://etymolution.outright.io
 
+# Signal: Outright Mental's own first-party, aggregate-only analytics (outrightmental/signal).
+# _includes/signal-depth.html is the depth ladder (no script, no cookie, no id), first in <body>;
+# _includes/signal.html is the web client, which asks before it keeps any journey. Both are in
+# production builds only (GitHub Pages builds with JEKYLL_ENV=production). The key is public.
+signal:
+  key: etymolution-com.3190456f9ff640f03c1f2eea
+  ingest: https://in.signal.outright.io
+  privacy: https://outrightmental.com/privacy/
+  studio:
+    - outrightmental.com
+    - nickcharneykaye.com
+    - fevertilt.com
+    - starharvester.com
+    - umlaut-hero.com
+    - conversationsimulator.com
+    - docs.conversationsimulator.com
+    - xjmusic.com
+    - docs.xjmusic.com
+    - podcast.xjmusic.com
+    - outright.io
+    - agendar.outright.io
+    - wetware.outright.io
+    - etymolution.com
+    - makeitmoreinteresting.com
+    - interesting.outright.io
+    - ascendinglark.com
+    - garden.ascendinglark.com
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
